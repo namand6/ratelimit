@@ -64,6 +64,6 @@ limiter = RedisLimiter(redis.Redis(), "gcra", limit=100, window=60)
 
 ```sh
 python3.12 -m venv .venv && .venv/bin/pip install pytest redis
-.venv/bin/python -m pytest -q          # 33 tests (+5 Redis tests that run when Redis is up)
+.venv/bin/python -m pytest -q          # 33 tests (+5 Redis tests that run when Redis is up; CI runs all 38 against a real Redis)
 .venv/bin/python -m ratelimit.bench
 ```
