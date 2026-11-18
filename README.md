@@ -1,5 +1,7 @@
 # ratelimit
 
+[![tests](https://github.com/namand6/ratelimit/actions/workflows/tests.yml/badge.svg)](https://github.com/namand6/ratelimit/actions/workflows/tests.yml)
+
 Five rate-limiting algorithms built from scratch, the same five as atomic Redis Lua scripts for
 many app servers, WSGI middleware with standard `429` / `Retry-After` / `RateLimit-*` headers, and a
 benchmark that shows the trade-offs with numbers. No required dependencies.
